@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os.path
 from pathlib import Path
-
+ 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -76,23 +76,23 @@ ASGI_APPLICATION = 'myproject.asgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'channelsdb',
-        'USER': 'omkar',
-        'PASSWORD': '2311',
-        'HOST': 'localhost',
-        'PORT': '',
-    }
-}
+     'default': {
+         'ENGINE': 'django.db.backends.sqlite3',
+         'NAME': BASE_DIR / 'db.sqlite3',
+     }
+ }
+
+#DATABASES = {
+ #   'default': {
+ #       'ENGINE': 'django.db.backends.postgresql_psycopg2',
+ #       'NAME': 'channelsdb',
+#        'USER': 'omkar',
+ #       'PASSWORD': '2311',
+ #       'HOST': 'localhost',
+ #       'PORT': '',
+#    }
+#}
 
 
 # Password validation
